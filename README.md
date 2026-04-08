@@ -100,7 +100,6 @@ Enterprise-ready, AI-powered identity verification focused on trust, security, a
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
-- [Environment Variables](#environment-variables)
 - [Available Scripts](#available-scripts)
 - [Security Considerations](#security-considerations)
 - [Screenshots / UI Preview](#screenshots--ui-preview)
@@ -195,40 +194,17 @@ DIVS is an AI-powered identity verification platform built for high-confidence o
 npm.cmd install
 ```
 
-### 2. Configure Environment
-
-Create a `.env` file in the project root:
-
-```env
-VITE_SUPABASE_URL=https://your-project.supabase.co
-VITE_SUPABASE_ANON_KEY=your-anon-key
-```
-
-### 3. Run Development Server
+### 2. Run Development Server
 
 ```bash
 npm.cmd run dev -- --port 5173 --strictPort
 ```
 
-### 4. Build and Preview Production
+### 3. Build and Preview Production
 
 ```bash
 npm.cmd run build
 npm.cmd run preview
-```
-
-## Environment Variables
-
-Required `.env` keys:
-
-- `VITE_SUPABASE_URL`
-- `VITE_SUPABASE_ANON_KEY`
-
-Example:
-
-```env
-VITE_SUPABASE_URL=https://your-project.supabase.co
-VITE_SUPABASE_ANON_KEY=your-anon-key
 ```
 
 ## Available Scripts
@@ -262,13 +238,12 @@ VITE_SUPABASE_ANON_KEY=your-anon-key
 
 ## Deployment
 
-This Vite application can be deployed on Vercel, Netlify, or GitHub Pages after setting the required environment variables in the target environment.
+This Vite application can be deployed on Vercel, Netlify, or GitHub Pages.
 
 ## Troubleshooting
 
 - If npm commands fail in PowerShell, use `npm.cmd` instead of `npm`.
 - If port `5173` is unavailable, stop the existing process or use another port.
-- If Supabase authentication fails, verify URL and anon key values.
 
 ## License
 
